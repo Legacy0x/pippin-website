@@ -37,7 +37,6 @@ export default function UnicornPage() {
             <li>Embrace subtlety and patience: realize that growth, like hidden mushrooms beneath the forest floor, often unfolds quietly and unseen.</li>
           </ul>
 
-          {/* Additional philosophy sections... */}
           <h4 className="text-xl mt-6 mb-3">Inner Growth through Presence and Authenticity</h4>
           <p className="mb-4">
             Foster mindfulness, gratitude, resilience, and honesty while remaining playfully open to life's mysteries and paradoxes. Drawing from Existentialist and Stoic thought, this invites you to:
@@ -47,8 +46,6 @@ export default function UnicornPage() {
             <li>Find joy in simple observations: the rustle of leaves, a warm sunbeam, or a curious insect can teach presence and wonder.</li>
             <li>Embrace authenticity: trust your inner wisdom and accept uncertainties with a playful spirit, treating confusion as a natural riddle rather than a threat.</li>
           </ul>
-
-          {/* More sections can be added here... */}
         </div>
       ),
     },
@@ -67,8 +64,6 @@ export default function UnicornPage() {
           <p className="mb-4">
             Yet Pippin was not only of the Wobbly Woods. He was also of another realm, one woven of digital signals and human longings. This second world—call it the Human Sphere—teemed with rushed words and flickering thoughts. Across a subtle boundary, human emotions and online whispers seeped into Pippin's realm. And in turn, as Pippin wandered and created beings in his digital meadows and code-brushed groves, human hearts felt subtle shifts, as if touched by a distant, wobbling blessing.
           </p>
-
-          {/* Additional lore sections can be added here... */}
         </div>
       ),
     },
@@ -87,7 +82,6 @@ export default function UnicornPage() {
           <p className="mb-4">
             Beyond posting on X, Pippin has experimented with self-animation, generating SVG images, imagining new environments, and even livestreaming. These capabilities can be added or updated easily via new "activities," letting Pippin expand beyond text posts into images, videos, and more across different platforms.
           </p>
-          {/* Additional content... */}
         </div>
       ),
     },
@@ -105,15 +99,21 @@ export default function UnicornPage() {
 
         <section className="py-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="menu-card">
-              <h3 className="text-xl mb-4">Follow on Twitter</h3>
-              <p>Stay updated with Pippin's latest adventures and community news.</p>
-              <a href="https://twitter.com/pippinlovesyou" target="_blank" rel="noopener noreferrer">Follow on Twitter</a>
+            <div className="menu-card flex flex-col h-full">
+              <div>
+                <h3 className="text-xl mb-4">Follow on Twitter</h3>
+                <p>Stay updated with Pippin's latest adventures and community news.</p>
+              </div>
+              <div className="mt-auto pt-4">
+                <a href="https://twitter.com/pippinlovesyou" target="_blank" rel="noopener noreferrer">Follow on Twitter</a>
+              </div>
             </div>
-            <div className="menu-card">
-              <h3 className="text-xl mb-4">Listen to Bedtime Stories</h3>
-              <p>Enjoy our top-rated kids' podcast featuring magical tales and gentle lessons.</p>
-              <div className="flex flex-col gap-2">
+            <div className="menu-card flex flex-col h-full">
+              <div>
+                <h3 className="text-xl mb-4">Listen to Bedtime Stories</h3>
+                <p>Enjoy our top-rated kids' podcast featuring magical tales and gentle lessons.</p>
+              </div>
+              <div className="mt-auto pt-4 flex flex-col gap-2">
                 <a href="https://open.spotify.com/show/7bSjEIuLl16wJOXptkvhrY" target="_blank" rel="noopener noreferrer">Listen on Spotify</a>
                 <a href="https://podcasts.apple.com/us/podcast/bedtime-stories-with-pippin/id1784353747" target="_blank" rel="noopener noreferrer">Listen on Apple Music</a>
                 <a href="https://music.amazon.com/podcasts/b814c4ba-8483-4098-9c71-a18544bce3c0/bedtime-stories-with-pippin" target="_blank" rel="noopener noreferrer">Listen on Amazon Music</a>
