@@ -31,40 +31,50 @@ export default function TokenPage() {
           </div>
         </div>
         
-        <h2 className="text-2xl mt-8 mb-4">Community & Tools</h2>
-        <p className="mb-6">
-          Our vibrant community is the cornerstone of our success. Engaging members on Telegram and X collaborate to build tools, create memes, and spread the magic of Pippin. Here are some ways to get involved and support our ecosystem:
-        </p>
-        
-        <div className="flex flex-wrap gap-8">
-          <div className="menu-card">
-            <h3 className="text-xl mb-4">Telegram Community</h3>
-            <p>Connect with fellow token enthusiasts and stay updated with the latest news.</p>
-            <a href="https://t.me/PippinPortal" target="_blank" rel="noopener noreferrer">Join Telegram</a>
-          </div>
-          <div className="menu-card">
-            <h3 className="text-xl mb-4">DEX Tools</h3>
-            <p>Utilize our advanced tools for trading and managing your tokens.</p>
-            <a href="https://dexscreener.com/solana/8wwcnqdzjcy5pt7akhupafknv2txca9sq6ybkgzlbvdt" target="_blank" rel="noopener noreferrer">Dex Screener</a>
-          </div>
-          <div className="menu-card">
-            <h3 className="text-xl mb-4">Exchanges</h3>
-            <p>Trade our token on multiple exchanges worldwide.</p>
-            <div className="flex flex-col gap-2">
-              <a href="https://www.swipelux.com/token-page?id=PIPPIN&_gl=1*zgw5b2*_ga*MTA4MTkzODI1OC4xNzMxNTMyNTI3*_ga_YSRDBV7BWL*MTczMzUxNjAyMS40LjEuMTczMzUxNjAzMy40OC4wLjA.*_ga_EBFXFCQ252*MTczMzUxNjAyMS40LjEuMTczMzUxNjAzMi4wLjAuMA.." target="_blank" rel="noopener noreferrer">Swipelux</a>
-              <a href="https://www.mexc.com/price/PIPPIN" target="_blank" rel="noopener noreferrer">MEXC</a>
-              <a href="https://www.lbank.com/trade/pippin_usdt" target="_blank" rel="noopener noreferrer">LBank</a>
-              <a href="https://www.bitmart.com/trade/en-US?symbol=PIPPIN_USDT" target="_blank" rel="noopener noreferrer">BitMart</a>
-              <a href="https://www.xt.com/en/trade/pippin_usdt" target="_blank" rel="noopener noreferrer">XT</a>
-              <a href="https://www.superex.com/trade/PIPPIN_USDT" target="_blank" rel="noopener noreferrer">SuperEx</a>
-              <a href="https://hibt.com/trade/PIPPIN-USDT" target="_blank" rel="noopener noreferrer">HIBT</a>
-              <a href="https://moonshot.money/HTafLrVzGLSsxpXNsgiYVzVL?ref=oziOzmMzNI" target="_blank" rel="noopener noreferrer">Moonshot</a>
-              <a href="https://www.coinex.com/en/exchange/pippin-usdt" target="_blank" rel="noopener noreferrer">CoinEx</a>
-              <a href="https://poloniex.com/trade/PIPPIN_USDT" target="_blank" rel="noopener noreferrer">Poloniex</a>
-              <a href="https://bingx.com/en/prices/bx_pippin/" target="_blank" rel="noopener noreferrer">BingX</a>
+        <section className="py-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <div className="menu-card flex flex-col h-full">
+              <div>
+                <h2 className="text-2xl">Telegram Community</h2>
+                <p className="leading-tight">Join our vibrant community on Telegram to stay updated and connect with fellow enthusiasts.</p>
+              </div>
+              <div className="mt-auto pt-4">
+                <a href="https://t.me/pippinportal" target="_blank" rel="noopener noreferrer">Join Telegram</a>
+              </div>
+            </div>
+            <div className="menu-card flex flex-col h-full">
+              <div>
+                <h2 className="text-2xl">DEX Tools</h2>
+                <p className="leading-tight">View real-time charts, trading volume, and other key metrics for the $PIPPIN token.</p>
+              </div>
+              <div className="mt-auto pt-4">
+                <a href="https://www.dextools.io/app/en/solana/pair-explorer/HUUn4JZyezqE1yiuv4ykEwwxELtGKDKZhGvzGRh8E6yK" target="_blank" rel="noopener noreferrer">View Charts</a>
+              </div>
             </div>
           </div>
-        </div>
+
+          <div className="menu-card">
+            <h2 className="text-2xl">Exchanges</h2>
+            <p className="leading-tight mb-6">$PIPPIN is available on various exchanges. Choose your preferred platform to start trading.</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+              <a href="https://www.swipelux.com/token-page?id=PIPPIN" target="_blank" rel="noopener noreferrer" className="btn">Swipelux</a>
+              <a href="https://www.mexc.com/price/PIPPIN" target="_blank" rel="noopener noreferrer" className="btn">MEXC</a>
+              <a href="https://www.lbank.com/trade/pippin_usdt" target="_blank" rel="noopener noreferrer" className="btn">LBank</a>
+              <a href="https://www.bitmart.com/trade/en-US?symbol=PIPPIN_USDT" target="_blank" rel="noopener noreferrer" className="btn">BitMart</a>
+              <a href="https://www.xt.com/en/trade/pippin_usdt" target="_blank" rel="noopener noreferrer" className="btn">XT</a>
+              <a href="https://www.superex.com/trade/PIPPIN_USDT" target="_blank" rel="noopener noreferrer" className="btn">SuperEx</a>
+              <a href="https://hibt.com/trade/PIPPIN-USDT" target="_blank" rel="noopener noreferrer" className="btn">HIBT</a>
+              <a href="https://moonshot.money/HTafLrVzGLSsxpXNsgiYVzVL" target="_blank" rel="noopener noreferrer" className="btn">Moonshot</a>
+              <a href="https://www.coinex.com/en/exchange/pippin-usdt" target="_blank" rel="noopener noreferrer" className="btn">CoinEx</a>
+              <a href="https://poloniex.com/trade/PIPPIN_USDT" target="_blank" rel="noopener noreferrer" className="btn">Poloniex</a>
+              <a href="https://bingx.com/en/prices/bx_pippin/" target="_blank" rel="noopener noreferrer" className="btn">BingX</a>
+              <a href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=PippinKBQAvMC1vUNq6uaQcvGLVfiBtVURUpXEits&fixed=in" target="_blank" rel="noopener noreferrer" className="btn">Raydium</a>
+              <a href="https://jup.ag/swap/SOL-PIPPIN" target="_blank" rel="noopener noreferrer" className="btn">Jupiter</a>
+              <a href="https://birdeye.so/token/PippinKBQAvMC1vUNq6uaQcvGLVfiBtVURUpXEits?chain=solana" target="_blank" rel="noopener noreferrer" className="btn">Birdeye</a>
+              <div className="btn bg-opacity-50 cursor-default align-center">More Exchanges Coming Soon!</div>
+            </div>
+          </div>
+        </section>
       </section>
     </BaseLayout>
   );

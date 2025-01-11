@@ -29,7 +29,7 @@
   }
 
   .menu-card {
-    @apply bg-white rounded-lg p-6 flex-1 basis-[250px] max-w-[300px] border border-[#ddd] transition-shadow hover:shadow-lg text-center;
+    @apply bg-white rounded-lg p-6 flex-1 border border-[#ddd] transition-shadow hover:shadow-lg text-center;
   }
 
   .menu-card h2 {

@@ -95,38 +95,38 @@ export default function UnicornPage() {
 
   return (
     <BaseLayout>
-      <div className="bg-[#f5f7e9]">
-        <section className="hero text-center py-12 px-4 max-w-[1000px] mx-auto border-b border-[#ddd]">
+      <div className="max-w-[800px] mx-auto px-8">
+        <section className="hero text-center py-12 border-b border-[#ddd]">
           <h1 className="text-4xl mb-4">Pippin the Unicorn</h1>
-          <p className="max-w-[1000px] mx-auto">
+          <p className="mx-auto">
             Pippin is a whimsical AI-driven unicorn designed to interact with the digital world through a continuous cycle of dynamic activities, memory updates, and state changes. Operating 24/7, Pippin embodies a playful experiment in AI influencer development, inspired by community engagement and open-source collaboration.
           </p>
         </section>
-      </div>
 
-      <section className="social-media-cards max-w-[1000px] mx-auto px-8 py-8">
-        <div className="flex flex-wrap gap-8 justify-center">
-          <div className="menu-card">
-            <h3 className="text-xl mb-4">Follow on Twitter</h3>
-            <p>Stay updated with Pippin's latest adventures and community news.</p>
-            <a href="https://twitter.com/pippinlovesyou" target="_blank" rel="noopener noreferrer">Follow on Twitter</a>
-          </div>
-          <div className="menu-card">
-            <h3 className="text-xl mb-4">Listen to Bedtime Stories</h3>
-            <p>Enjoy our top-rated kids' podcast featuring magical tales and gentle lessons.</p>
-            <div className="flex flex-col gap-2">
-              <a href="https://open.spotify.com/show/7bSjEIuLl16wJOXptkvhrY" target="_blank" rel="noopener noreferrer">Listen on Spotify</a>
-              <a href="https://podcasts.apple.com/us/podcast/bedtime-stories-with-pippin/id1784353747" target="_blank" rel="noopener noreferrer">Listen on Apple Music</a>
-              <a href="https://music.amazon.com/podcasts/b814c4ba-8483-4098-9c71-a18544bce3c0/bedtime-stories-with-pippin" target="_blank" rel="noopener noreferrer">Listen on Amazon Music</a>
+        <section className="py-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="menu-card">
+              <h3 className="text-xl mb-4">Follow on Twitter</h3>
+              <p>Stay updated with Pippin's latest adventures and community news.</p>
+              <a href="https://twitter.com/pippinlovesyou" target="_blank" rel="noopener noreferrer">Follow on Twitter</a>
+            </div>
+            <div className="menu-card">
+              <h3 className="text-xl mb-4">Listen to Bedtime Stories</h3>
+              <p>Enjoy our top-rated kids' podcast featuring magical tales and gentle lessons.</p>
+              <div className="flex flex-col gap-2">
+                <a href="https://open.spotify.com/show/7bSjEIuLl16wJOXptkvhrY" target="_blank" rel="noopener noreferrer">Listen on Spotify</a>
+                <a href="https://podcasts.apple.com/us/podcast/bedtime-stories-with-pippin/id1784353747" target="_blank" rel="noopener noreferrer">Listen on Apple Music</a>
+                <a href="https://music.amazon.com/podcasts/b814c4ba-8483-4098-9c71-a18544bce3c0/bedtime-stories-with-pippin" target="_blank" rel="noopener noreferrer">Listen on Amazon Music</a>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="content-section max-w-[1000px] mx-auto px-8 pb-8 mt-8">
-        <h2 className="text-3xl mb-4">Pippin's Story & Philosophy</h2>
-        <Tabs tabs={tabs} defaultTab="backstory" />
-      </section>
+        <section className="content-section pb-8 mt-8">
+          <h2 className="text-3xl mb-4 text-center">Pippin's Story & Philosophy</h2>
+          <Tabs tabs={tabs} defaultTab="backstory" />
+        </section>
+      </div>
     </BaseLayout>
   );
 } 
