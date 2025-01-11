@@ -105,7 +105,9 @@ export default function UnicornPage() {
                 <p>Stay updated with Pippin's latest adventures and community news.</p>
               </div>
               <div className="mt-auto pt-4">
-                <a href="https://twitter.com/pippinlovesyou" target="_blank" rel="noopener noreferrer">Follow on Twitter</a>
+                <div className="flex flex-col items-center gap-2">
+                  <a href="https://twitter.com/pippinlovesyou" target="_blank" rel="noopener noreferrer" className="w-fit">Follow on Twitter</a>
+                </div>
               </div>
             </div>
             <div className="menu-card flex flex-col h-full">
@@ -113,10 +115,12 @@ export default function UnicornPage() {
                 <h3 className="text-xl mb-4">Listen to Bedtime Stories</h3>
                 <p>Enjoy our top-rated kids' podcast featuring magical tales and gentle lessons.</p>
               </div>
-              <div className="mt-auto pt-4 flex flex-col gap-2">
-                <a href="https://open.spotify.com/show/7bSjEIuLl16wJOXptkvhrY" target="_blank" rel="noopener noreferrer">Listen on Spotify</a>
-                <a href="https://podcasts.apple.com/us/podcast/bedtime-stories-with-pippin/id1784353747" target="_blank" rel="noopener noreferrer">Listen on Apple Music</a>
-                <a href="https://music.amazon.com/podcasts/b814c4ba-8483-4098-9c71-a18544bce3c0/bedtime-stories-with-pippin" target="_blank" rel="noopener noreferrer">Listen on Amazon Music</a>
+              <div className="mt-auto pt-4">
+                <div className="flex flex-col items-center gap-2">
+                  <a href="https://open.spotify.com/show/7bSjEIuLl16wJOXptkvhrY" target="_blank" rel="noopener noreferrer" className="w-fit">Listen on Spotify</a>
+                  <a href="https://podcasts.apple.com/us/podcast/bedtime-stories-with-pippin/id1784353747" target="_blank" rel="noopener noreferrer" className="w-fit">Listen on Apple Music</a>
+                  <a href="https://music.amazon.com/podcasts/b814c4ba-8483-4098-9c71-a18544bce3c0/bedtime-stories-with-pippin" target="_blank" rel="noopener noreferrer" className="w-fit">Listen on Amazon Music</a>
+                </div>
               </div>
             </div>
           </div>

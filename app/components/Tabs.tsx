@@ -19,7 +19,7 @@ export default function Tabs({ tabs, defaultTab }: TabsProps) {
 
   return (
     <div>
-      <div className="flex justify-center mt-8 flex-wrap">
+      <div className="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap justify-center sm:gap-0">
         {tabs.map((tab) => (
           <button
             key={tab.id}
@@ -28,10 +28,10 @@ export default function Tabs({ tabs, defaultTab }: TabsProps) {
               setKey(prev => prev + 1);
             }}
             className={`
-              text-white border border-[#ddd] px-6 py-3 rounded-t-lg cursor-pointer font-medium transition-colors whitespace-nowrap -mb-px
+              text-white px-6 py-3 rounded-lg sm:rounded-none sm:rounded-t-lg cursor-pointer font-medium transition-colors whitespace-nowrap focus:outline-none sm:ml-0.5 first:sm:ml-0
               ${activeTab === tab.id 
-                ? "bg-[#3a5a3d] border-b-[#f5f7e9]" 
-                : "bg-[#5A8C5B] hover:bg-[#4e7a4f]"
+                ? "bg-[#3a5a3d] sm:border-t sm:border-x border-[#3a5a3d]" 
+                : "bg-[#5A8C5B] hover:bg-[#4e7a4f] sm:border-t sm:border-x border-[#5A8C5B] hover:border-[#4e7a4f]"
               }
             `}
           >
@@ -39,7 +39,7 @@ export default function Tabs({ tabs, defaultTab }: TabsProps) {
           </button>
         ))}
       </div>
-      <div className="p-4 border border-[#ddd] bg-white rounded-lg">
+      <div className="p-4 border border-[#ddd] bg-white rounded-lg mt-2 sm:mt-0">
         <div key={key} className="animate-fadeIn">
           {tabs.find((tab) => tab.id === activeTab)?.content}
         </div>
