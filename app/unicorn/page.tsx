@@ -1,6 +1,5 @@
 'use client';
 
-import Image from "next/image";
 import BaseLayout from "../components/BaseLayout";
 import Tabs from "../components/Tabs";
 
@@ -96,14 +95,16 @@ export default function UnicornPage() {
 
   return (
     <BaseLayout>
-      <section className="hero text-center py-12 px-4">
-        <h1 className="text-4xl mb-4">Pippin the Unicorn</h1>
-        <p className="max-w-[1000px] mx-auto">
-          Pippin is a whimsical AI-driven unicorn designed to interact with the digital world through a continuous cycle of dynamic activities, memory updates, and state changes. Operating 24/7, Pippin embodies a playful experiment in AI influencer development, inspired by community engagement and open-source collaboration.
-        </p>
-      </section>
+      <div className="bg-[#f5f7e9]">
+        <section className="hero text-center py-12 px-4 max-w-[1000px] mx-auto border-b border-[#ddd]">
+          <h1 className="text-4xl mb-4">Pippin the Unicorn</h1>
+          <p className="max-w-[1000px] mx-auto">
+            Pippin is a whimsical AI-driven unicorn designed to interact with the digital world through a continuous cycle of dynamic activities, memory updates, and state changes. Operating 24/7, Pippin embodies a playful experiment in AI influencer development, inspired by community engagement and open-source collaboration.
+          </p>
+        </section>
+      </div>
 
-      <section className="social-media-cards max-w-[1000px] mx-auto px-8">
+      <section className="social-media-cards max-w-[1000px] mx-auto px-8 py-8">
         <div className="flex flex-wrap gap-8 justify-center">
           <div className="menu-card">
             <h3 className="text-xl mb-4">Follow on Twitter</h3>
@@ -122,7 +123,7 @@ export default function UnicornPage() {
         </div>
       </section>
 
-      <section className="content-section max-w-[1000px] mx-auto px-8 pb-8">
+      <section className="content-section max-w-[1000px] mx-auto px-8 pb-8 mt-8">
         <h2 className="text-3xl mb-4">Pippin's Story & Philosophy</h2>
         <Tabs tabs={tabs} defaultTab="backstory" />
       </section>

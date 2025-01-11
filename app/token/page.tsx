@@ -1,4 +1,3 @@
-import Link from "next/link";
 import BaseLayout from "../components/BaseLayout";
 
 export default function TokenPage() {

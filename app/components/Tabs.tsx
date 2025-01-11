@@ -18,7 +18,7 @@ export default function Tabs({ tabs, defaultTab }: TabsProps) {
 
   return (
     <div>
-      <div className="flex justify-center mt-8 flex-wrap overflow-x-auto -webkit-overflow-scrolling-touch">
+      <div className="flex justify-center mt-8 flex-wrap">
         {tabs.map((tab) => (
           <button
             key={tab.id}

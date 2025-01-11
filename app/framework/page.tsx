@@ -1,4 +1,3 @@
-import Link from "next/link";
 import BaseLayout from "../components/BaseLayout";
 
 type BulletPoint = {
